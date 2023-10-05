@@ -1,0 +1,237 @@
+
+#popinOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#popin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 759px;
+    height: 535px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px #00000055;
+    opacity: 1;
+}
+
+#boxClose {
+    position: absolute;
+    top: 9px;
+    left: 713px;
+    width: 38px;
+    height: 38px;
+    background: transparent url('ICON CLOSE GREY.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#rectangle1 {
+    position: absolute;
+    top: 36px;
+    left: 13px;
+    width: 4px;
+    height: 137px;
+    background: #F29301;
+    opacity: 1;
+    z-index: 2;
+}
+
+#image {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 286px;
+    height: 535px;
+    opacity: 1;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+#img2 {
+   display: none;
+}
+
+#rectangle2 {
+    position: absolute;
+    top: 362px;
+    left: 300px;
+    width: 4px;
+    height: 137px;
+    background: #F29301;
+    opacity: 1;
+}
+
+#text1 {
+    position: absolute;
+    top: 101px;
+    left: 358px;
+    text-align: left;
+    font: normal normal bold 20px/30px Poppins;
+    letter-spacing: 0px;
+    color: #F29301;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+#line1 {
+    position: absolute;
+    top: 145px;
+    left: 358px;
+    width: 70px;
+    height: 2px;
+    background-color: #F29301;
+    opacity: 1;
+}
+
+#text2 {
+    position: absolute;
+    top: 173px;
+    left: 358px;
+    width: 300px;
+    height: 77px;
+    text-align: left;
+    font: normal normal bold 27px/40px Poppins;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #0A0A0A;
+    opacity: 1;
+}
+
+#text3 {
+    position: absolute;
+    top: 266px;
+    left: 358px;
+    width: 358px;
+    height: 58px;
+    text-align: left;
+    font-size:20px;
+    letter-spacing: 0px;
+    color: #0A0A0A;
+    opacity: 1;
+}
+
+#composantButton {
+    position: absolute;
+    top: 354px;
+    left: 358px;
+    width: 261px;
+    height: 66px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #F29301;
+    opacity: 1;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #F29301;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+#composantButton:hover {
+    background: #F29301;
+    color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+
+    #popinOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    #popin {
+        position: fixed;
+        top: 209px;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 375px;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px #00000055;
+        opacity: 1;
+    }
+
+    #rectangle1,
+    #rectangle2 {
+        display: none;
+    }
+
+    #img {
+        display: none;
+    }
+
+    #image{
+        top: 0px;
+        left: 0px;
+        width: 375px;
+        height: 183px;
+        opacity: 1;
+    }
+
+    #img2 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+    #text1 {
+        top: 123px;
+        left: 30px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    #line1 {
+        top: 158px;
+        left: 30px;
+        width: 50px;
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+
+    #text2 {
+        top: 217px;
+        left: 30px;
+        width: 315px;
+        height: 64px;
+    }
+
+    #text3 {
+        top: 293px;
+        left: 30px;
+        width: 315px;
+        height: 48px;
+    }
+
+    #composantButton {
+        top: 375px;
+        left: 30px;
+        width: 315px;
+        font-size: 18px;
+    }
+
+    #boxClose {
+        top:0px;
+        left: 337px;
+        width: 38px; 
+        height: 38px;
+        background: transparent url('ICON CLOSE GREY.png') 0% 0% no-repeat padding-box;
+        z-index: 3;
+
+    }
+}
